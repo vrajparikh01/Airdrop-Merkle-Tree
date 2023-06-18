@@ -1,0 +1,30 @@
+{
+  "name": "airdrop-merkle-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vraj",
+  "license": "ISC",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "^4.8.2",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "hardhat": "^2.13.0",
+    "hardhat-abi-exporter": "^2.10.1",
+    "hardhat-contract-sizer": "^2.8.0",
+    "hardhat-deploy": "^0.11.26",
+    "hardhat-gas-reporter": "^1.0.9",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.3.10",
+    "mocha": "^10.2.0",
+    "path": "^0.12.7",
+    "solidity-coverage": "^0.8.2"
+  }
+}

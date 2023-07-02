@@ -12,12 +12,12 @@ describe("Merkle Tree", () => {
   const REWARD_AMOUNT = toWei(1000);
   let addrs;
   let contractBlockNumber;
-  //   any account that has used ethSwap before blockCutoff will be eligible for the airdrop
+  // any account that has used ethSwap before blockCutoff will be eligible for the airdrop
   let blockCutoff = 10;
 
   beforeEach(async () => {
     // Create an array that shuffles the numbers 0 through 19.
-    // The elements of the array will represent the develeopment account number
+    // The elements of the array will represent the development account number
     // and the index will represent the order in which that account will use ethSwap to buyTokens
     this.shuffle = [];
     while (this.shuffle.length < 20) {

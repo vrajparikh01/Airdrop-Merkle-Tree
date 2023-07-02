@@ -16,13 +16,14 @@ contract Airdrop is ERC20("Airdrop", "ADT") {
     }
 
     // function people will call for airdrop
+    // proof constructed from merkletreejs
     function claim(bytes32[] calldata _proof) external {
         require(!claimed[msg.sender], "Already claimed airdrop");
         claimed[msg.sender] = true;
 
         bytes32 _leaf = keccak256(abi.encodePacked(msg.sender));
         require(MerkleProof.verify(_proof, root, _leaf), "Invalid Merkle proof");
-        
+
         _mint(msg.sender, rewardedAmount);
     }
 }
